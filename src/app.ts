@@ -18,12 +18,7 @@ private initMongoose(): void {
 }
 
 private connectDatabase(): void {
-  mongoose.connect('mongodb+srv://dashboard:rmDeTwwkwIsFqvNV@cluster0.yq03wyz.mongodb.net/dashboard_db?retryWrites=true&w=majority', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-  });
+  mongoose.connect(process.env.URL_BANK);
 }
 
 public listen(port: number): void {
