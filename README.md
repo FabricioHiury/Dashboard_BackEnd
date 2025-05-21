@@ -7,9 +7,11 @@ This project is a back-end application developed using TypeScript and MongoDB, a
 ```
 Dashboard_BackEnd/
 ├── src/
+│   ├── Schemas/
 │   ├── controllers/
-│   ├── models/
-│   ├── routes/
+│   ├── errors/
+│   ├── middlewares/
+│   ├── responses/
 │   └── services/
 ├── .eslintrc.js
 ├── .gitignore
